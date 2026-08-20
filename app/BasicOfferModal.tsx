@@ -100,11 +100,11 @@ export function BasicOfferModal({ basicCheckoutUrl, discountCheckoutUrl }: Basic
                 <small>com todos os Bônus (valem R$ 97,24)</small>
               </div>
 
-              <a className="basic-offer-primary" href={discountCheckoutUrl}>
+              <a className="basic-offer-primary btn-ic" href={discountCheckoutUrl}>
                 SIM! Quero o Pacote Completo Com Desconto
                 <span>(R$17,90)</span>
               </a>
-              <a className="basic-offer-secondary" href={basicCheckoutUrl}>
+              <a className="basic-offer-secondary btn-ic" href={basicCheckoutUrl}>
                 Continuar apenas com o pacote básico
               </a>
             </div>

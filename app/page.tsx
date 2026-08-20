@@ -83,8 +83,16 @@ const checkoutLinks = {
 };
 
 function Button({ children, className = "", href = "#ofertas" }: { children: ReactNode; className?: string; href?: string }) {
+  const buttonClassName = [
+    "cta-button",
+    href.startsWith("https://pay.lowify.com.br/") ? "btn-ic" : "",
+    className,
+  ]
+    .filter(Boolean)
+    .join(" ");
+
   return (
-    <a className={`cta-button ${className}`} href={href}>
+    <a className={buttonClassName} href={href}>
       {children}
       <span aria-hidden="true">→</span>
     </a>
