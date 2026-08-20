@@ -37,7 +37,11 @@ const bonuses = [
   ["/assets/bonus/bonus-6.jpg", "Kit de Aulas de Emergencia", "Aulas dinamicas prontas para aqueles dias em que voce precisa de algo rapido e eficaz."],
 ];
 
-const faqs = [
+const faqs: {
+  answer: string;
+  icon?: "check" | "shield";
+  question: string;
+}[] = [
   {
     question: "O acesso chega na hora?",
     answer:

@@ -27,7 +27,15 @@ npm install
 npm run build
 ```
 
-O projeto usa Vinext/Vite e gera a versao de producao na pasta `dist`.
+O projeto agora usa Next.js puro. Na Vercel, use o preset `Next.js` e deixe o campo `Output Directory` vazio.
+
+## Configuracao recomendada na Vercel
+
+- Framework Preset: `Next.js`
+- Root Directory: `./` se o `package.json` estiver na raiz do repositorio
+- Install Command: `npm install`
+- Build Command: `npm run build`
+- Output Directory: deixe vazio
 
 ## Links de checkout configurados
 

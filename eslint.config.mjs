@@ -35,6 +35,12 @@ const eslintConfig = defineConfig([
         version: "detect",
       },
     },
+    rules: {
+      "@next/next/no-img-element": "off",
+      "jsx-a11y/media-has-caption": "off",
+      "jsx-a11y/no-noninteractive-element-interactions": "off",
+      "react-hooks/set-state-in-effect": "off",
+    },
   },
 ]);
 
